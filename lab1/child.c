@@ -69,7 +69,6 @@ int main(void)
 
             for (int i = 0; i <= line_len; i++)
             {
-                // Виртуальный пробел на i == line_len сбрасывает последнее число
                 char c = (i < line_len) ? line[i] : ' ';
 
                 if (c == '-')
