@@ -1,0 +1,1 @@
+clang -O2 -pthread -o lab2 lab2_matrix.c
