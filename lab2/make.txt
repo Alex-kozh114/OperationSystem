@@ -1,1 +1,2 @@
 clang -O2 -pthread -o lab2 lab2_matrix.c
+./lab2 2000 4 & PID=$!; while [ $(ps -M $PID | tail -n +2 | wc -l) -le 1 ] && kill -0 $PID 2>/dev/null; do sleep 0.2; done; sleep 0.3; ps -M $PID | tail -n +2 | wc -l; wait $PID
